@@ -1,0 +1,22 @@
+[package]
+name = "cobalt_entity"
+version = "0.1.0"
+authors = ["Ivo Wetzel <ivo.wetzel@googlemail.com>"]
+description="Library for entity state synchronization between a server and clients."
+documentation = "https://bonsaiden.github.io/cobalt-entity/doc/cobalt"
+repository = "https://github.com/BonsaiDen/cobalt-entity.git"
+readme = "README.md"
+keywords = [ "synchronization", "networking", "games", "entities" ]
+categories = ["network-programming"]
+license = "MIT/Apache-2.0"
+
+[dependencies]
+lazy_static = "0.2.2"
+clippy = { version = "*", optional = true }
+
+[dev-dependencies]
+cobalt = "0.21.0"
+
+[features]
+lint = ["clippy"]
+
